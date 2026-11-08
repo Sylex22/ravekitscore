@@ -1,0 +1,42 @@
+# RaveKits Core Stage 2 - every setting used in Stage 2 is populated.
+world: MedievalLobby
+regions:
+  safe: safezone
+  pit: pit
+spawn:
+  world: MedievalLobby
+  x: 0.5
+  y: 100.0
+  z: 2.5
+  yaw: 0.0
+  pitch: 0.0
+arena:
+  reset-minutes: 15
+  max-tracked-blocks: 50000
+  max-build-y: 85
+  reentry-cooldown-seconds: 10
+  spawn-protection-seconds: 3
+  keep-inventory-on-pvp-death: false
+combat:
+  tag-seconds: 15
+  block-commands: true
+  allowed-commands-while-tagged: []
+  cancel-on-quit-and-credit-last-attacker: true
+storage:
+  sqlite-file: players.db
+  autosave-seconds: 60
+messages:
+  prefix: '&6&lRAVEKITS &8» &f'
+  spawn: '&aReturned to spawn.'
+  combat-blocked: '&cYou cannot do that while combat-tagged.'
+  cooldown: '&cYou must wait before re-entering the arena.'
+  arena-enter: '&eArena entered with a random kit.'
+  arena-exit: '&eArena exited.'
+
+progression:
+  max-level: 100
+mining:
+  ore-respawn-seconds: 90
+  xp-per-ore:
+    min: 3
+    max: 7

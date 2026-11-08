@@ -1,0 +1,25 @@
+RAVEKITS CORE — DEVELOPMENT BUILD (NOT PRODUCTION VERIFIED)
+==========================================================
+This project is SOURCE. There is no compiled JAR in this ZIP. GitHub Actions must succeed first.
+
+BUILD WITHOUT CODING:
+1. Create a PRIVATE GitHub repository at https://github.com/new
+2. Extract this ZIP and upload its contents (including .github/workflows/build.yml) to the repository root.
+3. Click Actions -> Build RaveKits Core -> Run workflow (or wait for push build).
+4. If green, download the build artifact. It contains RaveKitsCore.jar.
+5. If red, save the failing build log. DO NOT install the failed build.
+
+TEST ON A NON-PRODUCTION COPY FIRST:
+1. Back up MedievalLobby and player data.
+2. Stop the Paper 1.21.11 server.
+3. REMOVE HeavenRandomKits, RaveKitsProgression and prior PitKits jars if still installed.
+4. Install compatible WorldEdit, WorldGuard. PlaceholderAPI is optional.
+5. Place the built RaveKitsCore.jar in plugins/ and restart.
+6. Check /plugins and /rk admin diagnostics.
+7. Confirm WorldGuard region IDs: safezone and pit; set arena build/PvP flags accordingly.
+8. Run /rk admin ores scan IN-GAME while the arena is loaded. It records existing natural ores.
+9. Verify /rk, /rk menu kits, /rk menu ore, /rk admin kit create testkit.
+10. Connect NPCs by assigning the player commands: /rk menu ore, levels, kits, crates, cosmetics.
+
+Only a successful Java build shows the code compiled. It does not prove that the plugin
+works on Paper. Review TESTING.md and test the gameplay loop on a backup server.

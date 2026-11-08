@@ -1,0 +1,44 @@
+name: RaveKitsCore
+version: 0.3.0-development
+main: com.ravekits.core.RaveKitsCore
+api-version: '1.21.11'
+description: RaveKits custom core development build
+load: POSTWORLD
+depend: [WorldGuard, WorldEdit]
+softdepend: [PlaceholderAPI, LuckPerms]
+commands:
+  rk:
+    description: RaveKits status and administration
+    usage: /rk
+    permission: ravekits.use
+  help:
+    description: Open the custom RaveKits help menu
+    usage: /help
+    permission: ravekits.help
+  spawn:
+    description: Return to safe spawn when not combat-tagged
+    usage: /spawn
+    permission: ravekits.spawn
+permissions:
+  ravekits.use:
+    default: true
+  ravekits.help:
+    default: true
+  ravekits.spawn:
+    default: true
+  ravekits.admin:
+    default: op
+  ravekits.admin.reload:
+    default: op
+  ravekits.admin.diagnostics:
+    default: op
+  ravekits.admin.kit:
+    default: op
+  ravekits.admin.ores:
+    default: op
+  ravekits.admin.coins:
+    default: op
+  ravekits.admin.xp:
+    default: op
+  ravekits.admin.arena:
+    default: op
